@@ -80,7 +80,7 @@ To start the FastAPI server, execute the following command from the root of the 
 ```bash
 uvicorn app:app --reload
 ```
-This will start the development server at `http://127.0.0.1:8000`, where you can access the API.
+This will start the development server at `http://127.0.0.1:8000/static/index.html`, where you can access the API.
 
 ### Running Jupyter Notebooks
 
