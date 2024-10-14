@@ -1,0 +1,904 @@
+character_name_Agni
+character_name_Ah Muzen Cab
+character_name_Ah Puch
+character_name_Amaterasu
+character_name_Anhur
+character_name_Anubis
+character_name_Ao Kuang
+character_name_Aphrodite
+character_name_Apollo
+character_name_Arachne
+character_name_Ares
+character_name_Artemis
+character_name_Artio
+character_name_Athena
+character_name_Atlas
+character_name_Awilix
+character_name_Baba Yaga
+character_name_Bacchus
+character_name_Bakasura
+character_name_Bake Kujira
+character_name_Baron Samedi
+character_name_Bastet
+character_name_Bellona
+character_name_Cabrakan
+character_name_Camazotz
+character_name_Cerberus
+character_name_Cernunnos
+character_name_Chaac
+character_name_Chang'e
+character_name_Charon
+character_name_Charybdis
+character_name_Chernobog
+character_name_Chiron
+character_name_Chronos
+character_name_Cliodhna
+character_name_Cthulhu
+character_name_Cu Chulainn
+character_name_Cupid
+character_name_Da Ji
+character_name_Danzaburou
+character_name_Discordia
+character_name_Erlang Shen
+character_name_Eset
+character_name_Fafnir
+character_name_Fenrir
+character_name_Freya
+character_name_Ganesha
+character_name_Geb
+character_name_Gilgamesh
+character_name_Guan Yu
+character_name_Hachiman
+character_name_Hades
+character_name_He Bo
+character_name_Heimdallr
+character_name_Hel
+character_name_Hera
+character_name_Hercules
+character_name_Horus
+character_name_Hou Yi
+character_name_Hun Batz
+character_name_Ishtar
+character_name_Ix Chel
+character_name_Izanami
+character_name_Janus
+character_name_Jing Wei
+character_name_Jormungandr
+character_name_Kali
+character_name_Khepri
+character_name_King Arthur
+character_name_Kukulkan
+character_name_Kumbhakarna
+character_name_Kuzenbo
+character_name_Lancelot
+character_name_Loki
+character_name_Maman Brigitte
+character_name_Martichoras
+character_name_Maui
+character_name_Medusa
+character_name_Mercury
+character_name_Merlin
+character_name_Morgan Le Fay
+character_name_Mulan
+character_name_Ne Zha
+character_name_Neith
+character_name_Nemesis
+character_name_Nike
+character_name_Nox
+character_name_Nu Wa
+character_name_Nut
+character_name_Odin
+character_name_Olorun
+character_name_Osiris
+character_name_Pele
+character_name_Persephone
+character_name_Poseidon
+character_name_Ra
+character_name_Raijin
+character_name_Rama
+character_name_Ratatoskr
+character_name_Ravana
+character_name_Scylla
+character_name_Serqet
+character_name_Set
+character_name_Shiva
+character_name_Skadi
+character_name_Sobek
+character_name_Sol
+character_name_Sun Wukong
+character_name_Surtr
+character_name_Susano
+character_name_Sylvanus
+character_name_Terra
+character_name_Thanatos
+character_name_The Morrigan
+character_name_Thor
+character_name_Thoth
+character_name_Tiamat
+character_name_Tsukuyomi
+character_name_Tyr
+character_name_Ullr
+character_name_Vamana
+character_name_Vulcan
+character_name_Xbalanque
+character_name_Xing Tian
+character_name_Yemoja
+character_name_Ymir
+character_name_Yu Huang
+character_name_Zeus
+character_name_Zhong Kui
+enemy_1_character_Agni
+enemy_1_character_Ah Muzen Cab
+enemy_1_character_Ah Puch
+enemy_1_character_Amaterasu
+enemy_1_character_Anhur
+enemy_1_character_Anubis
+enemy_1_character_Ao Kuang
+enemy_1_character_Aphrodite
+enemy_1_character_Apollo
+enemy_1_character_Arachne
+enemy_1_character_Ares
+enemy_1_character_Artemis
+enemy_1_character_Artio
+enemy_1_character_Athena
+enemy_1_character_Atlas
+enemy_1_character_Awilix
+enemy_1_character_Baba Yaga
+enemy_1_character_Bacchus
+enemy_1_character_Bakasura
+enemy_1_character_Bake Kujira
+enemy_1_character_Baron Samedi
+enemy_1_character_Bastet
+enemy_1_character_Bellona
+enemy_1_character_Cabrakan
+enemy_1_character_Camazotz
+enemy_1_character_Cerberus
+enemy_1_character_Cernunnos
+enemy_1_character_Chaac
+enemy_1_character_Chang'e
+enemy_1_character_Charon
+enemy_1_character_Charybdis
+enemy_1_character_Chernobog
+enemy_1_character_Chiron
+enemy_1_character_Chronos
+enemy_1_character_Cliodhna
+enemy_1_character_Cthulhu
+enemy_1_character_Cu Chulainn
+enemy_1_character_Cupid
+enemy_1_character_Da Ji
+enemy_1_character_Danzaburou
+enemy_1_character_Discordia
+enemy_1_character_Erlang Shen
+enemy_1_character_Eset
+enemy_1_character_Fafnir
+enemy_1_character_Fenrir
+enemy_1_character_Freya
+enemy_1_character_Ganesha
+enemy_1_character_Geb
+enemy_1_character_Gilgamesh
+enemy_1_character_Guan Yu
+enemy_1_character_Hachiman
+enemy_1_character_Hades
+enemy_1_character_He Bo
+enemy_1_character_Heimdallr
+enemy_1_character_Hel
+enemy_1_character_Hera
+enemy_1_character_Hercules
+enemy_1_character_Horus
+enemy_1_character_Hou Yi
+enemy_1_character_Hun Batz
+enemy_1_character_Ishtar
+enemy_1_character_Ix Chel
+enemy_1_character_Izanami
+enemy_1_character_Janus
+enemy_1_character_Jing Wei
+enemy_1_character_Jormungandr
+enemy_1_character_Kali
+enemy_1_character_Khepri
+enemy_1_character_King Arthur
+enemy_1_character_Kukulkan
+enemy_1_character_Kumbhakarna
+enemy_1_character_Kuzenbo
+enemy_1_character_Lancelot
+enemy_1_character_Loki
+enemy_1_character_Maman Brigitte
+enemy_1_character_Martichoras
+enemy_1_character_Maui
+enemy_1_character_Medusa
+enemy_1_character_Mercury
+enemy_1_character_Merlin
+enemy_1_character_Morgan Le Fay
+enemy_1_character_Mulan
+enemy_1_character_Ne Zha
+enemy_1_character_Neith
+enemy_1_character_Nemesis
+enemy_1_character_Nike
+enemy_1_character_Nox
+enemy_1_character_Nu Wa
+enemy_1_character_Nut
+enemy_1_character_Odin
+enemy_1_character_Olorun
+enemy_1_character_Osiris
+enemy_1_character_Pele
+enemy_1_character_Persephone
+enemy_1_character_Poseidon
+enemy_1_character_Ra
+enemy_1_character_Raijin
+enemy_1_character_Rama
+enemy_1_character_Ratatoskr
+enemy_1_character_Ravana
+enemy_1_character_Scylla
+enemy_1_character_Serqet
+enemy_1_character_Set
+enemy_1_character_Shiva
+enemy_1_character_Skadi
+enemy_1_character_Sobek
+enemy_1_character_Sol
+enemy_1_character_Sun Wukong
+enemy_1_character_Surtr
+enemy_1_character_Susano
+enemy_1_character_Sylvanus
+enemy_1_character_Terra
+enemy_1_character_Thanatos
+enemy_1_character_The Morrigan
+enemy_1_character_Thor
+enemy_1_character_Thoth
+enemy_1_character_Tiamat
+enemy_1_character_Tsukuyomi
+enemy_1_character_Tyr
+enemy_1_character_Ullr
+enemy_1_character_Vamana
+enemy_1_character_Vulcan
+enemy_1_character_Xbalanque
+enemy_1_character_Xing Tian
+enemy_1_character_Yemoja
+enemy_1_character_Ymir
+enemy_1_character_Yu Huang
+enemy_1_character_Zeus
+enemy_1_character_Zhong Kui
+enemy_2_character_Agni
+enemy_2_character_Ah Muzen Cab
+enemy_2_character_Ah Puch
+enemy_2_character_Amaterasu
+enemy_2_character_Anhur
+enemy_2_character_Anubis
+enemy_2_character_Ao Kuang
+enemy_2_character_Aphrodite
+enemy_2_character_Apollo
+enemy_2_character_Arachne
+enemy_2_character_Ares
+enemy_2_character_Artemis
+enemy_2_character_Artio
+enemy_2_character_Athena
+enemy_2_character_Atlas
+enemy_2_character_Awilix
+enemy_2_character_Baba Yaga
+enemy_2_character_Bacchus
+enemy_2_character_Bakasura
+enemy_2_character_Bake Kujira
+enemy_2_character_Baron Samedi
+enemy_2_character_Bastet
+enemy_2_character_Bellona
+enemy_2_character_Cabrakan
+enemy_2_character_Camazotz
+enemy_2_character_Cerberus
+enemy_2_character_Cernunnos
+enemy_2_character_Chaac
+enemy_2_character_Chang'e
+enemy_2_character_Charon
+enemy_2_character_Charybdis
+enemy_2_character_Chernobog
+enemy_2_character_Chiron
+enemy_2_character_Chronos
+enemy_2_character_Cliodhna
+enemy_2_character_Cthulhu
+enemy_2_character_Cu Chulainn
+enemy_2_character_Cupid
+enemy_2_character_Da Ji
+enemy_2_character_Danzaburou
+enemy_2_character_Discordia
+enemy_2_character_Erlang Shen
+enemy_2_character_Eset
+enemy_2_character_Fafnir
+enemy_2_character_Fenrir
+enemy_2_character_Freya
+enemy_2_character_Ganesha
+enemy_2_character_Geb
+enemy_2_character_Gilgamesh
+enemy_2_character_Guan Yu
+enemy_2_character_Hachiman
+enemy_2_character_Hades
+enemy_2_character_He Bo
+enemy_2_character_Heimdallr
+enemy_2_character_Hel
+enemy_2_character_Hera
+enemy_2_character_Hercules
+enemy_2_character_Horus
+enemy_2_character_Hou Yi
+enemy_2_character_Hun Batz
+enemy_2_character_Ishtar
+enemy_2_character_Ix Chel
+enemy_2_character_Izanami
+enemy_2_character_Janus
+enemy_2_character_Jing Wei
+enemy_2_character_Jormungandr
+enemy_2_character_Kali
+enemy_2_character_Khepri
+enemy_2_character_King Arthur
+enemy_2_character_Kukulkan
+enemy_2_character_Kumbhakarna
+enemy_2_character_Kuzenbo
+enemy_2_character_Lancelot
+enemy_2_character_Loki
+enemy_2_character_Maman Brigitte
+enemy_2_character_Martichoras
+enemy_2_character_Maui
+enemy_2_character_Medusa
+enemy_2_character_Mercury
+enemy_2_character_Merlin
+enemy_2_character_Morgan Le Fay
+enemy_2_character_Mulan
+enemy_2_character_Ne Zha
+enemy_2_character_Neith
+enemy_2_character_Nemesis
+enemy_2_character_Nike
+enemy_2_character_Nox
+enemy_2_character_Nu Wa
+enemy_2_character_Nut
+enemy_2_character_Odin
+enemy_2_character_Olorun
+enemy_2_character_Osiris
+enemy_2_character_Pele
+enemy_2_character_Persephone
+enemy_2_character_Poseidon
+enemy_2_character_Ra
+enemy_2_character_Raijin
+enemy_2_character_Rama
+enemy_2_character_Ratatoskr
+enemy_2_character_Ravana
+enemy_2_character_Scylla
+enemy_2_character_Serqet
+enemy_2_character_Set
+enemy_2_character_Shiva
+enemy_2_character_Skadi
+enemy_2_character_Sobek
+enemy_2_character_Sol
+enemy_2_character_Sun Wukong
+enemy_2_character_Surtr
+enemy_2_character_Susano
+enemy_2_character_Sylvanus
+enemy_2_character_Terra
+enemy_2_character_Thanatos
+enemy_2_character_The Morrigan
+enemy_2_character_Thor
+enemy_2_character_Thoth
+enemy_2_character_Tiamat
+enemy_2_character_Tsukuyomi
+enemy_2_character_Tyr
+enemy_2_character_Ullr
+enemy_2_character_Vamana
+enemy_2_character_Vulcan
+enemy_2_character_Xbalanque
+enemy_2_character_Xing Tian
+enemy_2_character_Yemoja
+enemy_2_character_Ymir
+enemy_2_character_Yu Huang
+enemy_2_character_Zeus
+enemy_2_character_Zhong Kui
+enemy_3_character_Agni
+enemy_3_character_Ah Muzen Cab
+enemy_3_character_Ah Puch
+enemy_3_character_Amaterasu
+enemy_3_character_Anhur
+enemy_3_character_Anubis
+enemy_3_character_Ao Kuang
+enemy_3_character_Aphrodite
+enemy_3_character_Apollo
+enemy_3_character_Arachne
+enemy_3_character_Ares
+enemy_3_character_Artemis
+enemy_3_character_Artio
+enemy_3_character_Athena
+enemy_3_character_Atlas
+enemy_3_character_Awilix
+enemy_3_character_Baba Yaga
+enemy_3_character_Bacchus
+enemy_3_character_Bakasura
+enemy_3_character_Bake Kujira
+enemy_3_character_Baron Samedi
+enemy_3_character_Bastet
+enemy_3_character_Bellona
+enemy_3_character_Cabrakan
+enemy_3_character_Camazotz
+enemy_3_character_Cerberus
+enemy_3_character_Cernunnos
+enemy_3_character_Chaac
+enemy_3_character_Chang'e
+enemy_3_character_Charon
+enemy_3_character_Charybdis
+enemy_3_character_Chernobog
+enemy_3_character_Chiron
+enemy_3_character_Chronos
+enemy_3_character_Cliodhna
+enemy_3_character_Cthulhu
+enemy_3_character_Cu Chulainn
+enemy_3_character_Cupid
+enemy_3_character_Da Ji
+enemy_3_character_Danzaburou
+enemy_3_character_Discordia
+enemy_3_character_Erlang Shen
+enemy_3_character_Eset
+enemy_3_character_Fafnir
+enemy_3_character_Fenrir
+enemy_3_character_Freya
+enemy_3_character_Ganesha
+enemy_3_character_Geb
+enemy_3_character_Gilgamesh
+enemy_3_character_Guan Yu
+enemy_3_character_Hachiman
+enemy_3_character_Hades
+enemy_3_character_He Bo
+enemy_3_character_Heimdallr
+enemy_3_character_Hel
+enemy_3_character_Hera
+enemy_3_character_Hercules
+enemy_3_character_Horus
+enemy_3_character_Hou Yi
+enemy_3_character_Hun Batz
+enemy_3_character_Ishtar
+enemy_3_character_Ix Chel
+enemy_3_character_Izanami
+enemy_3_character_Janus
+enemy_3_character_Jing Wei
+enemy_3_character_Jormungandr
+enemy_3_character_Kali
+enemy_3_character_Khepri
+enemy_3_character_King Arthur
+enemy_3_character_Kukulkan
+enemy_3_character_Kumbhakarna
+enemy_3_character_Kuzenbo
+enemy_3_character_Lancelot
+enemy_3_character_Loki
+enemy_3_character_Maman Brigitte
+enemy_3_character_Martichoras
+enemy_3_character_Maui
+enemy_3_character_Medusa
+enemy_3_character_Mercury
+enemy_3_character_Merlin
+enemy_3_character_Morgan Le Fay
+enemy_3_character_Mulan
+enemy_3_character_Ne Zha
+enemy_3_character_Neith
+enemy_3_character_Nemesis
+enemy_3_character_Nike
+enemy_3_character_Nox
+enemy_3_character_Nu Wa
+enemy_3_character_Nut
+enemy_3_character_Odin
+enemy_3_character_Olorun
+enemy_3_character_Osiris
+enemy_3_character_Pele
+enemy_3_character_Persephone
+enemy_3_character_Poseidon
+enemy_3_character_Ra
+enemy_3_character_Raijin
+enemy_3_character_Rama
+enemy_3_character_Ratatoskr
+enemy_3_character_Ravana
+enemy_3_character_Scylla
+enemy_3_character_Serqet
+enemy_3_character_Set
+enemy_3_character_Shiva
+enemy_3_character_Skadi
+enemy_3_character_Sobek
+enemy_3_character_Sol
+enemy_3_character_Sun Wukong
+enemy_3_character_Surtr
+enemy_3_character_Susano
+enemy_3_character_Sylvanus
+enemy_3_character_Terra
+enemy_3_character_Thanatos
+enemy_3_character_The Morrigan
+enemy_3_character_Thor
+enemy_3_character_Thoth
+enemy_3_character_Tiamat
+enemy_3_character_Tsukuyomi
+enemy_3_character_Tyr
+enemy_3_character_Ullr
+enemy_3_character_Vamana
+enemy_3_character_Vulcan
+enemy_3_character_Xbalanque
+enemy_3_character_Xing Tian
+enemy_3_character_Yemoja
+enemy_3_character_Ymir
+enemy_3_character_Yu Huang
+enemy_3_character_Zeus
+enemy_3_character_Zhong Kui
+character_class_distance_Guardian
+character_class_distance_Hunter
+character_class_distance_Mage
+character_class_distance_Warrior
+character_type_dmg_Ranged
+character_type_dmgform_Physical
+character_tag_1_High Area Damage
+character_tag_1_High Attack Speed
+character_tag_1_High Crowd Control
+character_tag_1_High Defense
+character_tag_1_High Mobility
+character_tag_1_High Movement Speed
+character_tag_1_High Single Target Damage
+character_tag_1_High Sustain
+character_tag_1_Medium Area Damage
+character_tag_1_Medium Crowd Control
+character_tag_1_Medium Single Target Damage
+character_tag_1_Pusher
+character_tag_2_High Attack Speed
+character_tag_2_High Crowd Control
+character_tag_2_High Defense
+character_tag_2_High Mobility
+character_tag_2_High Movement Speed
+character_tag_2_High Single Target Damage
+character_tag_2_High Sustain
+character_tag_2_Medium Area Damage
+character_tag_2_Medium Crowd Control
+character_tag_2_Pusher
+enemy_1_class_distance_Guardian
+enemy_1_class_distance_Hunter
+enemy_1_class_distance_Mage
+enemy_1_class_distance_Warrior
+enemy_1_type_dmg_Ranged
+enemy_1_type_dmgform_Physical
+enemy_1_tag_1_High Area Damage
+enemy_1_tag_1_High Attack Speed
+enemy_1_tag_1_High Crowd Control
+enemy_1_tag_1_High Defense
+enemy_1_tag_1_High Mobility
+enemy_1_tag_1_High Movement Speed
+enemy_1_tag_1_High Single Target Damage
+enemy_1_tag_1_High Sustain
+enemy_1_tag_1_Medium Area Damage
+enemy_1_tag_1_Medium Crowd Control
+enemy_1_tag_1_Medium Single Target Damage
+enemy_1_tag_1_Pusher
+enemy_1_tag_2_High Attack Speed
+enemy_1_tag_2_High Crowd Control
+enemy_1_tag_2_High Defense
+enemy_1_tag_2_High Mobility
+enemy_1_tag_2_High Movement Speed
+enemy_1_tag_2_High Single Target Damage
+enemy_1_tag_2_High Sustain
+enemy_1_tag_2_Medium Area Damage
+enemy_1_tag_2_Medium Crowd Control
+enemy_1_tag_2_Pusher
+enemy_2_class_distance_Guardian
+enemy_2_class_distance_Hunter
+enemy_2_class_distance_Mage
+enemy_2_class_distance_Warrior
+enemy_2_type_dmg_Ranged
+enemy_2_type_dmgform_Physical
+enemy_2_tag_1_High Area Damage
+enemy_2_tag_1_High Attack Speed
+enemy_2_tag_1_High Crowd Control
+enemy_2_tag_1_High Defense
+enemy_2_tag_1_High Mobility
+enemy_2_tag_1_High Movement Speed
+enemy_2_tag_1_High Single Target Damage
+enemy_2_tag_1_High Sustain
+enemy_2_tag_1_Medium Area Damage
+enemy_2_tag_1_Medium Crowd Control
+enemy_2_tag_1_Medium Single Target Damage
+enemy_2_tag_1_Pusher
+enemy_2_tag_2_High Attack Speed
+enemy_2_tag_2_High Crowd Control
+enemy_2_tag_2_High Defense
+enemy_2_tag_2_High Mobility
+enemy_2_tag_2_High Movement Speed
+enemy_2_tag_2_High Single Target Damage
+enemy_2_tag_2_High Sustain
+enemy_2_tag_2_Medium Area Damage
+enemy_2_tag_2_Medium Crowd Control
+enemy_2_tag_2_Pusher
+enemy_3_class_distance_Guardian
+enemy_3_class_distance_Hunter
+enemy_3_class_distance_Mage
+enemy_3_class_distance_Warrior
+enemy_3_type_dmg_Ranged
+enemy_3_type_dmgform_Physical
+enemy_3_tag_1_High Area Damage
+enemy_3_tag_1_High Attack Speed
+enemy_3_tag_1_High Crowd Control
+enemy_3_tag_1_High Defense
+enemy_3_tag_1_High Mobility
+enemy_3_tag_1_High Movement Speed
+enemy_3_tag_1_High Single Target Damage
+enemy_3_tag_1_High Sustain
+enemy_3_tag_1_Medium Area Damage
+enemy_3_tag_1_Medium Crowd Control
+enemy_3_tag_1_Medium Single Target Damage
+enemy_3_tag_1_Pusher
+enemy_3_tag_2_High Attack Speed
+enemy_3_tag_2_High Crowd Control
+enemy_3_tag_2_High Defense
+enemy_3_tag_2_High Mobility
+enemy_3_tag_2_High Movement Speed
+enemy_3_tag_2_High Single Target Damage
+enemy_3_tag_2_High Sustain
+enemy_3_tag_2_Medium Area Damage
+enemy_3_tag_2_Medium Crowd Control
+enemy_3_tag_2_Pusher
+Berserker's Shield
+Eye of the Jungle
+Shogun's Kusari
+Frostbound Hammer
+Mantle of Discord
+N/A
+Warrior's Axe
+Evolved Gauntlet of Thebes
+Relic Dagger
+Reverent Pridwen
+Jotunn's Wrath
+Bluestone Pendant
+Evolved Soul Eater
+The Crusher
+Titan's Bane
+Qin's Sais
+Odysseus' Bow
+The Executioner
+Sands of Time
+Chronos' Pendant
+Divine Ruin
+Staff of Myrddin
+Breastplate of Valor
+Genji's Guard
+Amulet of the Stronghold
+Envenomed Executioner
+Eldritch Dagger
+Glorious Pridwen
+Jotunn's Vigor
+Brawler's Beat Stick
+Heartseeker
+Doom Orb
+Conduit Gem
+Magic Focus
+Breastplate of Vigilance
+Sovereignty
+Lost Artifact
+Shifter's Shield
+Gladiator's Shield
+Morningstar
+Silver Breastplate
+Gem Of Fate
+Soul Eater
+Warrior's Bane
+Griffonwing Earrings
+Light Blade
+Soul Gem
+Rod of Tahuti
+Cloak of Concentration
+Pridwen
+Shield of the Phoenix
+Spiked Shield
+Serrated Edge
+Apprentice Staff
+Breastplate
+Curseweaver
+Sorcerer's Staff
+Leather Cowl
+Crimson Claws
+Fatalis
+Seer of the Jungle
+Sundering Axe
+Pestilence
+Gem of Focus
+Spear of Desolation
+Calamitous Rod of Tahuti
+Spear of the Magus
+The Alternate Timeline
+Obsidian Shard
+Thistlethorn Acorn
+Flameforged Hammer
+Breastplate of Determination
+Bewitched Dagger
+Stone of Binding
+Evolved Book of Thoth
+Runeforged Hammer
+Breastplate of Regrowth
+Void Doumaru
+Balanced Blade
+Hastened Fatalis
+Cursed Gauntlet
+Restored Artifact
+Asi
+Demon Blade
+Hidden Dagger
+Warding Sigil
+Midgardian Mail
+Bluestone Brooch
+Arondight
+Axe of Animosity
+Stone of Gaia
+Ichaival
+Archdruid's Fury
+Keen Blade
+Erosion
+Knight's Shield
+Heavy Mace
+Enchanted Spear
+Telkhines Ring
+Talon Trinket
+Spirit Robe
+Soul Reaver
+Mystical Earring
+Contagion
+Ancient Blade
+Fortified Staff
+Fail-not
+Oni Hunter's Garb
+Rebound Buckler
+Silver Talisman
+Charged Morningstar
+Round Shield
+Talisman
+Book of Souls
+Talisman of Energy
+Daimyo’s Kusari
+Evolved Charon's Coin
+Stone Cutting Sword
+Sigil of The Old Guard
+Spellbound Kusari
+Dominance
+The Ferocious Executioner
+Mace
+Mystical Mail
+Cyclopean Ring
+Charon's Coin
+Adventurer's Blade
+Pendulum of Ages
+Enchanted Stone
+Magi's Cloak
+Heartward Amulet
+Abyssal Stone
+Vampiric Shroud
+Bancroft's Claw
+Typhon's Fang
+Evolved Transcendence
+Piercing Star
+Devourer's Gauntlet
+Prophetic Cloak
+Magi's Revenge
+Corrupted Bluestone
+Transcendence
+Infused Sigil
+Gilded Arrow
+Nimble Bancroft's Talon
+Demonic Grip
+Manikin Scepter
+Iron Mail
+Tablet of Destinies
+Cudgel
+Tainted Steel
+Absolution
+Steel Mail
+Steel Crest
+Tiny Trinket
+Uncommon Staff
+Gauntlet of Thebes
+Cannoneer's Cuirass
+Renewing Talisman
+Manikin Mace
+Cloak
+Ornate Arrow
+Fortress Shield
+Ethereal Staff
+Evolved Prophetic Cloak
+Manikin Hidden Blade
+Duality
+Tower Shield
+Winged Blade
+Nemean Armor
+Lotus Sickle
+Charged Bow
+Void Shield
+Death's Toll
+Ancile
+Spellbook
+Evolved Warlock's Staff
+Spell Focus
+Sage's Stone
+Amulet of Silence
+Gem of Isolation
+Hydra's Star
+Hydra's Lament
+Enchanted Kusari
+Mail of Renewal
+Bancroft's Talon
+Sturdy Breastplate
+Spectral Armor
+Archmage's Gem
+Leader's Cowl
+Jotunn's Cunning
+Silverbranch Bow
+Blackthorn Hammer
+Bumba's Dagger
+Polynomicon
+Smithy's Hammer
+Manticore's Spikes
+Druid Stone
+Swift Edge
+Pythagorem's Piece
+Vital Amplifier
+Warlock's Staff
+Stormseeker
+Short Sword
+Emerald Talisman
+Book of Thoth
+Perfected Rod of Tahuti
+Emerald Ring
+Runebreaking Hammer
+Last Gasp
+Phalanx
+Hide of the Nemean Lion
+Sphinx's Baubles
+Deathbringer
+Evolved Devourer's Gauntlet
+Equinox
+Cursed Orb
+Honed Edge
+Rod of Healing
+Shadowdrinker
+Bladed Boomerang
+Sacrificial Shroud
+Tainted Breastplate
+Warded Shield
+Death's Embrace
+Malicious Deathbringer
+Rod of Asclepius
+Book of Secrets
+Death's Temper
+Bloodforge
+Ring of Hecate
+Sekhmet's Scepter
+Short Bow
+Ritual Blade
+8-Pointed Shuriken
+Gleaming Ear Cuffs
+Katana
+Thousand Fold Blade
+Caduceus Club
+Hunter's Cowl
+Diamond Arrow
+Dawnbringer
+Bumba's Hammer
+Magi's Shelter
+Rangda's Mask
+Enchanted Ring
+Evolved Rage
+Fighter's Mask
+Hunter's Bow
+Fae-Blessed Hoops
+Devoted Deathbringer
+Rage
+Cleric's Cloak
+Emerald Mail
+Bristlebush Acorn
+Enchanted Trinket
+Bound Gauntlet
+Mystic Ring
+Rejuvenating Heart
+Tainted Amulet
+Rose Spike Earrings
+Evergreen Acorn
+Heavy Hammer
+Blood-soaked Shroud
+Restoring Wand
+Glowing Emerald
+Protector of the Jungle
+Splendid Scepter
+Jeweled Studs
+Thickbark Acorn
+Spiked Gauntlet
+Blessed Scepter
+Bumba's Spear
+Shillelagh
+Nettle Acorn
+Magic Acorn

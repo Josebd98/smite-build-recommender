@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Build Recommender</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .selection-container, .search-bar, .gods-container {
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            margin: 15px auto;
+        }
+
+        .selection-container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #e3e3e3;
+            border-radius: 8px;
+        }
+
+        .selection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 150px;
+        }
+
+        .selection img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            margin-top: 5px;
+        }
+
+        .selection-character img {
+            border-color: #007bff;
+        }
+
+        .selection-enemy img {
+            border-color: #ff0000;
+        }
+
+        .button-group {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .button-group label {
+            margin: 0 10px;
+            font-weight: bold;
+            color: #555;
+            cursor: pointer;
+        }
+
+        .search-bar {
+            margin: 20px auto;
+        }
+
+        .search-bar input {
+            padding: 8px;
+            width: 50%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .gods-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .god-container {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .god-container img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .god-container img:hover {
+            transform: scale(1.1);
+        }
+
+        .selected-character {
+            border-color: #007bff;
+        }
+
+        .selected-enemy {
+            border-color: #ff0000;
+        }
+
+        .god-container p {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #28a745;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        #result {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        /* Styles for loading GIF */
+        .loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .battle-video {
+            width: 150px;
+            height: auto;
+            border-radius: 8px; /* Optional: rounded borders */
+            margin-top: 10px;
+        }
+
+        #progress-bar {
+            width: 150px; /* Bar width */
+            height: 10px; /* Bar height */
+            margin-top: 10px;
+            border: 2px solid black; /* Black border */
+            border-radius: 5px;
+            background-color: #e0e0e0;
+            appearance: none;
+            overflow: hidden; /* To ensure the rounded border looks nice */
+        }
+
+        /* Custom styles for compatible browsers */
+        #progress-bar::-webkit-progress-bar {
+            background-color: #e0e0e0;
+            border-radius: 5px;
+        }
+
+        #progress-bar::-webkit-progress-value {
+            background-color: #28a745;
+            border-radius: 5px;
+        }
+
+        #progress-bar::-moz-progress-bar {
+            background-color: #28a745;
+            border-radius: 5px;
+        }
+
+        .build-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .item {
+            text-align: center;
+        }
+
+        .item-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            transition: transform 0.2s ease;
+        }
+
+        .item-name {
+            font-size: 14px;
+            margin-top: 5px;
+            color: #333;
+        }
+
+        .item-image:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <script>
+        let selectedCharacter = null;
+        const selectedEnemies = new Set();
+
+        async function loadGods() {
+            const response = await fetch('/get_gods');
+            const gods = await response.json();
+            const container = document.getElementById('gods-container');
+            container.innerHTML = '';
+
+            gods.forEach(god => {
+                const godDiv = document.createElement('div');
+                godDiv.className = 'god-container';
+                godDiv.dataset.name = god.name.toLowerCase();
+
+                const img = document.createElement('img');
+                img.src = god.link;
+                img.alt = god.name;
+                img.onclick = () => handleSelection(img);
+
+                const name = document.createElement('p');
+                name.textContent = god.name;
+
+                godDiv.appendChild(img);
+                godDiv.appendChild(name);
+                container.appendChild(godDiv);
+            });
+        }
+
+        function handleSelection(img) {
+            const selectionType = document.querySelector('input[name="selection"]:checked').value;
+
+            if (selectionType === 'character') {
+                clearCharacterSelection();
+                img.classList.add('selected-character');
+                selectedCharacter = img.alt;
+                document.getElementById('character_name').value = selectedCharacter;
+                updateSelectionDisplay('character-selection', img.src, selectedCharacter);
+            } else if (selectionType === 'enemy') {
+                if (selectedEnemies.size >= 3 && !selectedEnemies.has(img.alt)) {
+                    alert("You have already selected 3 enemies.");
+                    return;
+                }
+                if (selectedEnemies.has(img.alt)) {
+                    img.classList.remove('selected-enemy');
+                    selectedEnemies.delete(img.alt);
+                } else {
+                    img.classList.add('selected-enemy');
+                    selectedEnemies.add(img.alt);
+                }
+                updateEnemySelections();
+            }
+        }
+
+        function clearCharacterSelection() {
+            const images = document.querySelectorAll('.god-container img');
+            images.forEach(img => img.classList.remove('selected-character'));
+            selectedCharacter = null;
+        }
+
+        function updateSelectionDisplay(elementId, imgSrc, name) {
+            const selectionDiv = document.getElementById(elementId);
+            selectionDiv.querySelector('img').src = imgSrc;
+            selectionDiv.querySelector('.name').textContent = name;
+        }
+
+        function updateEnemySelections() {
+            const enemies = Array.from(selectedEnemies);
+            for (let i = 0; i < 3; i++) {
+                const elementId = `enemy-selection-${i + 1}`;
+                const selectionDiv = document.getElementById(elementId);
+                if (enemies[i]) {
+                    selectionDiv.querySelector('img').src = document.querySelector(`img[alt="${enemies[i]}"]`).src;
+                    selectionDiv.querySelector('.name').textContent = enemies[i];
+                    document.getElementById(`enemy_${i + 1}`).value = enemies[i];
+                } else {
+                    selectionDiv.querySelector('img').src = '';
+                    selectionDiv.querySelector('.name').textContent = 'None';
+                    document.getElementById(`enemy_${i + 1}`).value = '';
+                }
+            }
+        }
+
+        function filterGods() {
+            const filterText = document.getElementById('search').value.toLowerCase();
+            const godDivs = document.querySelectorAll('.god-container');
+            godDivs.forEach(div => {
+                const godName = div.dataset.name;
+                div.style.display = godName.includes(filterText) ? '' : 'none';
+            });
+        }
+
+        async function submitForm(event) {
+            event.preventDefault();
+            const characterName = document.getElementById('character_name').value;
+            const enemy1 = document.getElementById('enemy_1').value;
+            const enemy2 = document.getElementById('enemy_2').value;
+            const enemy3 = document.getElementById('enemy_3').value;
+
+            const formData = new FormData();
+            formData.append('character_name', characterName);
+            formData.append('enemy_1', enemy1);
+            formData.append('enemy_2', enemy2);
+            formData.append('enemy_3', enemy3);
+
+            // Show loading message and battle video
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `
+                <div class="loading">
+                    <p>Simulating the battle...</p>
+                    <video class="battle-video" src="https://cdnl.iconscout.com/lottie/premium/preview-watermark/sword-fight-12670507-10304916.mp4" autoplay="autoplay" muted="muted" loop="loop" playsinline="" type="video/mp4" alt="Simulating the battle"></video>
+                    <progress id="progress-bar" value="0" max="100"></progress>
+                </div>
+            `;
+
+            // Progress bar simulation
+            let progress = 0;
+            const progressBar = document.getElementById('progress-bar');
+            const interval = setInterval(() => {
+                if (progress < 90) {
+                    progress += Math.random() * 0.5; // Random increment to simulate real loading
+                    progressBar.value = Math.min(progress, 90);
+                } else if (progress >= 90 && progress < 99) {
+                    progress += 0.5; // Slow increment up to 99%
+                    progressBar.value = Math.min(progress, 99);
+                }
+            }, 400); // Update every 400 ms to advance slowly
+
+            try {
+                const response = await fetch('/recommend', {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await response.json();
+                
+                // Stop progress bar and complete it to 100%
+                clearInterval(interval);
+                progressBar.value = 100;
+
+                // Show the build result in the container
+                if (data.error) {
+                    resultDiv.innerHTML = `<p style="color: red;">${data.error}</p>`;
+                } else {
+                    resultDiv.innerHTML = "<h2>Recommended Build:</h2>";
+
+                    const buildContainer = document.createElement('div');
+                    buildContainer.classList.add('build-container');
+
+                    data.build_images.forEach(item => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.classList.add('item');
+
+                        const img = document.createElement('img');
+                        img.src = item.url;
+                        img.alt = item.name;
+                        img.classList.add('item-image');
+
+                        const name = document.createElement('p');
+                        name.textContent = item.name;
+                        name.classList.add('item-name');
+
+                        itemDiv.appendChild(img);
+                        itemDiv.appendChild(name);
+                        buildContainer.appendChild(itemDiv);
+                    });
+
+                    resultDiv.appendChild(buildContainer);
+                }
+            } catch (error) {
+                clearInterval(interval);
+                resultDiv.innerHTML = `<p style="color: red;">Error fetching the build.</p>`;
+            }
+        }
+
+        window.onload = loadGods;
+    </script>
+</head>
+<body>
+    <h1>Build Recommender</h1>
+
+    <div class="selection-container">
+        <div id="character-selection" class="selection selection-character">
+            <label>You</label>
+            <img src="" alt="Selected: None">
+            <p class="name">None</p>
+        </div>
+        <div id="enemy-selection-1" class="selection selection-enemy">
+            <label>Enemy 1</label>
+            <img src="" alt="Enemy 1: None">
+            <p class="name">None</p>
+        </div>
+        <div id="enemy-selection-2" class="selection selection-enemy">
+            <label>Enemy 2</label>
+            <img src="" alt="Enemy 2: None">
+            <p class="name">None</p>
+        </div>
+        <div id="enemy-selection-3" class="selection selection-enemy">
+            <label>Enemy 3</label>
+            <img src="" alt="Enemy 3: None">
+            <p class="name">None</p>
+        </div>
+    </div>
+
+    <form onsubmit="submitForm(event)">
+        <input type="hidden" id="character_name" name="character_name" required>
+        <input type="hidden" id="enemy_1" name="enemy_1" required>
+        <input type="hidden" id="enemy_2" name="enemy_2" required>
+        <input type="hidden" id="enemy_3" name="enemy_3" required>
+        <button type="submit">Get Build</button>
+    </form>
+
+    <div id="result"></div>
+
+    <div class="button-group">
+        <input type="radio" id="select-character" name="selection" value="character" checked>
+        <label for="select-character">You</label>
+        <input type="radio" id="select-enemy" name="selection" value="enemy">
+        <label for="select-enemy">Enemies</label>
+    </div>
+
+    <div class="search-bar">
+        <label for="search">Search God:</label>
+        <input type="text" id="search" oninput="filterGods()">
+    </div>
+
+    <div id="gods-container" class="gods-container"></div>
+</body>
+</html>
