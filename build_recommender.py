@@ -54,8 +54,8 @@ def initialize_model_and_scaler(columns):
 # Evaluate a build with the prediction model
 def evaluate_build(build, model, scaler, columns, character_encoded):
     build_df = character_encoded.copy()
-    for i, item in enumerate(build, start=1):
-        column_name = f'build_{i}_{item}'
+    for item in build:
+        column_name = f'{item}'
         if column_name in build_df.columns:
             build_df[column_name] = 1
     build_df = build_df.reindex(columns=columns, fill_value=0)
