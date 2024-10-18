@@ -17,6 +17,7 @@ The Smite Build Recommender aims to assist players in optimizing their builds ba
 - **API with FastAPI** to serve build recommendations.
 - **Machine Learning Models** to predict build scores, using damage as a key performance indicator.
 - **Ant Colony Optimization** method to test various builds based on selected characters and enemies.
+- - **Bayesian Optimization** other method to test various builds based on selected characters and enemies.
 - **Web Scraping** and **Automation**: Utilizes Selenium and PyAutoGUI to gather data directly from the web and automate tasks.
 
 ## Requirements
