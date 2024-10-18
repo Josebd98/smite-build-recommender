@@ -18,7 +18,7 @@ async def recommend(character_name: str = Form(...), enemy_1: str = Form(...), e
     enemies = [enemy_1, enemy_2, enemy_3]
     
     python_path = "C:\\Users\\joseb\\anaconda3\\python.exe"
-    script_path = os.path.join(os.getcwd(), 'build_recommender.py')
+    script_path = os.path.join(os.getcwd(), 'build_recommender_BAYOP.py')
     
     try:
         # Run the script to get the build
