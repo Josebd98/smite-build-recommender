@@ -1,6 +1,6 @@
 # Smite Build Recommender
 
-This project provides build recommendations for the game **Smite**. The information used to build this recommender system was gathered through web scraping from the Smite Guru website. Using this data, a machine learning model was developed to predict damage. Additionally, an ant colony optimization method was applied to explore different possible builds based on the chosen characters. Please note, this project is still in testing, and it’s not yet fully functional.
+This project provides build recommendations for the game **Smite**. The information used to build this recommender system was gathered through web scraping from the Smite Guru website. Using this data, a machine learning model was developed to predict damage. Additionally, an ant colony optimization method or a bayesian optimization was applied to explore different possible builds based on the chosen characters. Bayesian Optimization is now working better than ACO. Please note, this project is still in testing, and it’s not yet fully functional.
 
 ## Table of Contents
 
