@@ -118,28 +118,47 @@ def update_pheromones(build, score, pheromones, evaporation, pheromone_intensity
         pheromones[obj] *= (1 - evaporation)
 
 # Run ACO to find the best build with pheromones initialization
-def run_aco(model, scaler, columns, character_encoded, initial_items_god, non_initial_items, df_god, processed_items, num_ants=30, num_iterations=40, evaporation=0.2, pheromone_intensity=1.5):
+def run_aco(model, scaler, columns, character_encoded, initial_items_god, non_initial_items, df_god, processed_items, 
+                              num_ants=30, max_iterations=1000, evaporation=0.2, pheromone_intensity=1.5, 
+                              convergence_threshold=10, min_improvement=1e-5):
     pheromones = initialize_pheromones(initial_items_god + non_initial_items, df_god, processed_items)
     best_build = None
     best_score = float('-inf')
     
-    # Ordenar los ítems por frecuencia de más común a menos común
     sorted_initial_items = sorted(initial_items_god, key=lambda x: pheromones[x], reverse=True)
     sorted_non_initial_items = sorted(non_initial_items, key=lambda x: pheromones[x], reverse=True)
-    
-    for iteration in range(num_iterations):
+
+    iterations_since_last_improvement = 0
+    for iteration in range(max_iterations):
+        iteration_best_build = None
+        iteration_best_score = float('-inf')
+        
         for _ in range(num_ants):
             build = build_influenced_by_pheromones(sorted_initial_items, sorted_non_initial_items, pheromones)
-            
             score = evaluate_build(build, model, scaler, columns, character_encoded)[0]
             
-            if score > best_score:
-                best_score = score
-                best_build = build
-            
-            update_pheromones(build, score, pheromones, evaporation, pheromone_intensity)
+            if score > iteration_best_score:
+                iteration_best_score = score
+                iteration_best_build = build
+        
+        # Actualizar la mejor build global
+        if iteration_best_score > best_score + min_improvement:
+            best_score = iteration_best_score
+            best_build = iteration_best_build
+            iterations_since_last_improvement = 0  # Resetear contador de estancamiento
+        else:
+            iterations_since_last_improvement += 1  # No hubo mejora significativa
 
+        # Detener si ha habido estancamiento
+        if iterations_since_last_improvement >= convergence_threshold:
+            print(f"Converged after {iteration} iterations.")
+            break
+
+        # Actualizar feromonas según el mejor resultado de esta iteración
+        update_pheromones(iteration_best_build, iteration_best_score, pheromones, evaporation, pheromone_intensity)
+    
     return best_build, best_score
+
 
 # Main function with modified pheromone initialization
 def main(character_name, enemies):
